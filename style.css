@@ -223,6 +223,7 @@ font-size: 40px;
     padding: 10px 30px;
     text-decoration: none;
     color: #29384D;
+    border-radius: 60px;
    
 }
 .sub-about-me-container a:hover {
@@ -237,9 +238,11 @@ font-size: 40px;
 @media screen  and (max-width: 1168px){
     .sub-about-me-container img {
         width: 300px;
+
     }
     .about-me-container {
         gap: 10px;
+        
     }
     
 }
@@ -263,6 +266,7 @@ font-size: 40px;
         display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
+        text-align: center;
     }
     
 }
@@ -298,14 +302,17 @@ font-size: 40px;
     list-style: none;
     margin: 10px 0;
     justify-content: center;
+    
 }
 .sub-skills ul li {
    margin-left: 20px;
-   background-color: #3e5cb8;
+  
    padding: 5px 10px;
    border-radius: 100px;
-   color: #E3f9f6;
+  
+  
 }
+
 
 .sub-skills {
     color: #E3f9f6;
@@ -315,33 +322,41 @@ font-size: 40px;
 @media screen  and (min-width: 768px) {
     .skills-container {
         display: grid;
-        grid-template-columns:  1fr;
-        gap: 30px;
-        margin-top: 15%;
-    }
-
-}
-
-@media screen  and (min-width: 250px) {
-    .skills-container, .sub-about-me-container {
-        display: grid;
-        grid-template-columns:  1fr;
+        grid-template-columns:  repeat(2, 1fr);
         gap: 30px;
         margin-top: 15%;
         text-align: center;
     }
+
+}
+
+@media screen  and (min-width: 200px) {
+    .skills-container {
+        display: grid;
+        grid-template-columns:  1fr;
+        gap: 30px;
+       margin: 20% 5%;
+        text-align: center;
+
+
+       
+    }
     .skills-container {
        justify-content: center;
-       margin-left: 10px;
+       margin: 20px 70px;
+       
+
     }
     .sub-skills ul li {
         align-items: center;
         justify-content: center;
+       
     }
 
   
 
 }
+
     
 
 /* =============================Projects====================== */
@@ -361,13 +376,14 @@ font-size: 40px;
     gap: 20px;
     padding: 20px;
     justify-content: center;
+    
 }
 
 .projects-card {
     position: relative;
     height: 350px;
-    background-color: #E3f9f6;
-    overflow: hidden;
+    background: #E3f9f6;
+    /* overflow: hidden; */
     box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
     transition: .5s ease-in-out;
     color: #fff;
@@ -375,6 +391,7 @@ font-size: 40px;
     text-align: center;
     width: 300px;
     margin-top: 10%;
+   
   
 
    
@@ -388,7 +405,7 @@ font-size: 40px;
 }
 
 .projects-card:hover {
-    filter: blur(0);
+    filter: blur(1);
     transform: scaleY(1.3); /* Slightly larger on hover */
     opacity: 1;
     background-color: #a8dadc;
@@ -411,7 +428,7 @@ font-size: 40px;
 }
 
 .projects-circle p {
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 
 @media screen  and (max-width: 1303px){
@@ -508,7 +525,7 @@ footer section {
    
     border-radius: 20px;
     border: 2px solid #a8dadc;
-    backdrop-filter: blur(55px);
+  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -520,11 +537,13 @@ footer section h1 {
     color: #E3f9f6;
     text-align: center;
 }
-
+form {
+    width: 800px;
+}
 .inputbox {
     position: relative;
     margin: 30px 0;
-    max-width: 310px;
+    max-width: 410px;
     border-bottom: 2px solid #fff3d3;
 }
 
@@ -623,5 +642,9 @@ button:hover {
 @media screen  and (max-width: 578px){
     footer {
         background: none;
+    }
+    form {
+       align-items: center;
+       justify-content: center;
     }
 }
